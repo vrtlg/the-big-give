@@ -7,18 +7,18 @@
 
 .filter__item{
   background: white;
-  color: $highlight;
-  border: 1px solid $highlight;
+  color: $color-highlight;
+  border: 1px solid $color-highlight;
   border-radius: 5px;
-  font-size: 18px;
-  font-weight:500;
+  font-size: $font-regular;
+  font-weight:$font-bold;
   padding: 10px 68px;
   margin:5px;
   width: max-content;
 }
 
 .filter__item:hover{
-  background: #E0F0F2;
+  background: $color-lightteal;
 }
 
 .cards{
@@ -55,17 +55,17 @@
 
 .card__subheading{
   text-transform: uppercase;
-  font-size:14px;
-  letter-spacing: 1px;
+  font-size:$font-small;
+  letter-spacing: $spacing-medium;
   padding: 2px;
-  color: #7B8292;
-  font-weight:normal;
+  color: $color-lightgrey;
+  font-weight:$font-regular;
 }
 
 .card__heading{
-  color: #00707C;
-  font-weight: bold;
-  font-size: 24px;
+  color: $color-tealdarker;
+  font-weight: $font-bold;
+  font-size: $font-medium;
 }
 .card__tags{
   overflow:scroll;
@@ -84,9 +84,9 @@
   padding: 1px 5px;
   align-items: center;
   text-align: center;
-  font-size: 14px;
-  color: $highlight;
-  background: #E0F0F2;
+  font-size: $font-small;
+  color: $color-highlight;
+  background: $color-lightteal;
   border-radius: 14px;
 }
 
@@ -99,30 +99,30 @@
 }
 
 .fund-stats__title{
-  color:#7B8292;
-  font-size:12px;
-  font-weight: normal;
+  color:$color-lightgrey;
+  font-size:$font-smaller;
+  font-weight: $font-regular;
 }
 
 .fund-stats__figure{
-  color: $highlight;
-  font-size: 24px;
-  font-weight: bold;
+  color: $color-highlight;
+  font-size: $font-medium;
+  font-weight: $font-regular;
 }
 
 .card__interactions{
   margin: 25px;
 }
 .card__more-info{
-  font-size:18px;
-  color:$highlight;
+  font-size:$font-regular;
+  color:$color-highlight;
   margin-right: 80px;
 }
 
 .card__button{
-  background: #68D0B6;
+  background: $color-teal;
   border-radius:4px;
-  color:#007B87;
-  font-weight:500;
+  color: $color-seagreen;
+  font-weight:$font-bold;
   padding:10px 25px;
 }

@@ -3,6 +3,12 @@
   justify-content: space-between;
 }
 
+@mixin flex-center($justify: null){
+  display:flex;
+  align-items: center;
+  justify-content: $justify;
+}
+
 @mixin flex($direction, $wrap, $justify){
   display: flex;
   flex-direction: $direction;

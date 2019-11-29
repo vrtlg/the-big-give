@@ -1,5 +1,6 @@
 .banner{
-  background-image: url(images/hero-background.webp);
+  background: red;
+  // background-image: url(images/hero-background.webp);
   background-size: cover;
 }
 
@@ -8,25 +9,24 @@
   position:relative;
   top: 20px;
   justify-content: space-between;
-  color:white;
-  background-color: #333333;
+  color:$color-white;
+  background-color: $color-darkgrey;
 }
 
 .stats__figure{
-  font-size: 24px;
-  font-weight: bold;
+  font-size: $font-medium;
+  font-weight: $font-bolder;
   padding-right: 5px;
 }
 
 .statistics__item{
   padding-left: 20px;
-  display: flex;
-  align-items: center;
+  @include flex-center;
 }
 
 .stats__item--large{
   transform:scale(1.5);
-  background-color: #333333;
+  background-color: $color-darkgrey;
   border-radius: 4px;
   box-shadow: 5px 0px 5px rgba(0,0,0,0.5);
   padding: 5px 5px 5px 50px;
@@ -34,27 +34,26 @@
 
 .banner__wrap{
   margin: 30px 300px;
-  display: flex;
+  @include flex-center;
   justify-content: space-evenly;
-  align-items: center;
 }
 
 .banner__titles{
   padding-right: 100px;
   margin:50px 50px 50px 100px;
-  color: white;
+  color: $color-white;
 }
 
 .banner__title{
-  font-size: 60px;
+  font-size: $font-large;
   line-height: 70px;
-  font-weight:bold;
+  font-weight:$font-bolder;
   margin-bottom: 20px;
 }
 
 .banner__subtitle{
-  font-size: 24px;
-  font-weight: normal;
+  font-size: $font-medium;
+  font-weight: $font-regular;
   line-height: 36px;
 }
 
@@ -69,8 +68,8 @@
 
 .searchbox__title{
   text-transform: uppercase;
-  font-weight:normal;
-  letter-spacing: 1px;
+  font-weight:$font-regular;
+  letter-spacing: $spacing-medium;
 }
 
 .searchbox__title, .searchbox__input, .searchbox__button{
@@ -80,16 +79,16 @@
 }
 
 .searchbox__input{
-  font-size:18px;
+  font-size: $font-regular;
   padding:5px;
   border:none;
-  border-bottom: 1px solid $highlight;
+  border-bottom: 1px solid $color-highlight;
   border-radius: 4px;
 }
 
 .searchbox__button{
-  color: white;
-  background: $highlight;
+  color: $color-white;
+  background: $color-highlight;
   padding: 10px 30px;
   border-radius: 5px;
   text-align: center;

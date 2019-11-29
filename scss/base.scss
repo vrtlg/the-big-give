@@ -1,5 +1,5 @@
 html{
-  background:#FAFAFA;
+  background: $color-palegrey;
 }
 
 *{
@@ -9,6 +9,6 @@ html{
   text-decoration: none;
   box-sizing: border-box;
   color:inherit;
-  font-size: 18px;
+  font-size: $font-regular;
   font-family: "Maven Pro", Arial, sans-serif;
 }

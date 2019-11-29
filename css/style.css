@@ -8,12 +8,11 @@ html {
   text-decoration: none;
   box-sizing: border-box;
   color: inherit;
-  font-size: 18px;
+  font-size: 400;
   font-family: "Maven Pro", Arial, sans-serif; }
 
 .banner {
   background: red;
-  /* background-image: url(images/hero-background.webp); */
   background-size: cover; }
 
 .statistics {
@@ -21,12 +20,12 @@ html {
   position: relative;
   top: 20px;
   justify-content: space-between;
-  color: white;
+  color: #FFF;
   background-color: #333333; }
 
 .stats__figure {
   font-size: 24px;
-  font-weight: bold;
+  font-weight: 700;
   padding-right: 5px; }
 
 .statistics__item {
@@ -44,23 +43,23 @@ html {
 .banner__wrap {
   margin: 30px 300px;
   display: flex;
-  justify-content: space-evenly;
-  align-items: center; }
+  align-items: center;
+  justify-content: space-evenly; }
 
 .banner__titles {
   padding-right: 100px;
   margin: 50px 50px 50px 100px;
-  color: white; }
+  color: #FFF; }
 
 .banner__title {
-  font-size: 60px;
+  font-size: 70px;
   line-height: 70px;
-  font-weight: bold;
+  font-weight: 700;
   margin-bottom: 20px; }
 
 .banner__subtitle {
   font-size: 24px;
-  font-weight: normal;
+  font-weight: 400;
   line-height: 36px; }
 
 .searchbox {
@@ -73,7 +72,7 @@ html {
 
 .searchbox__title {
   text-transform: uppercase;
-  font-weight: normal;
+  font-weight: 400;
   letter-spacing: 1px; }
 
 .searchbox__title, .searchbox__input, .searchbox__button {
@@ -82,14 +81,14 @@ html {
   margin-bottom: 20px; }
 
 .searchbox__input {
-  font-size: 18px;
+  font-size: 400;
   padding: 5px;
   border: none;
   border-bottom: 1px solid #00838F;
   border-radius: 4px; }
 
 .searchbox__button {
-  color: white;
+  color: #FFF;
   background: #00838F;
   padding: 10px 30px;
   border-radius: 5px;
@@ -105,7 +104,7 @@ html {
   color: #00838F;
   border: 1px solid #00838F;
   border-radius: 5px;
-  font-size: 18px;
+  font-size: 400;
   font-weight: 500;
   padding: 10px 68px;
   margin: 5px;
@@ -147,11 +146,11 @@ html {
   letter-spacing: 1px;
   padding: 2px;
   color: #7B8292;
-  font-weight: normal; }
+  font-weight: 400; }
 
 .card__heading {
   color: #00707C;
-  font-weight: bold;
+  font-weight: 500;
   font-size: 24px; }
 
 .card__tags {
@@ -183,25 +182,25 @@ html {
 .fund-stats__title {
   color: #7B8292;
   font-size: 12px;
-  font-weight: normal; }
+  font-weight: 400; }
 
 .fund-stats__figure {
   color: #00838F;
   font-size: 24px;
-  font-weight: bold; }
+  font-weight: 400; }
 
 .card__interactions {
   margin: 25px; }
 
 .card__more-info {
-  font-size: 18px;
+  font-size: 400;
   color: #00838F;
   margin-right: 80px; }
 
 .card__button {
-  background: #68D0B6;
+  background: #00838F;
   border-radius: 4px;
-  color: #007B87;
+  color: #68D0B6;
   font-weight: 500;
   padding: 10px 25px; }
 
@@ -231,7 +230,7 @@ html {
 .subnav__item--highlighted {
   text-transform: uppercase;
   color: #68D0B6;
-  font-weight: 600;
+  font-weight: 500;
   margin-left: 300px;
   width: max-content;
   margin-bottom: 25px; }
@@ -252,9 +251,8 @@ html {
 
 .header {
   display: flex;
-  justify-content: space-between;
-  background-color: #FFF;
   align-items: center;
+  justify-content: space-between;
   padding: 1%; }
 
 .header__logo {
@@ -281,10 +279,10 @@ html {
 
 .search, .nav__item {
   margin-left: 70px;
-  font-weight: bold; }
+  font-weight: 700; }
 
 .nav__item--highlight {
-  font-weight: bold;
+  font-weight: 700;
   text-transform: uppercase;
   color: #00838F;
   letter-spacing: 0.5px;

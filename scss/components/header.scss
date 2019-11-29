@@ -1,9 +1,5 @@
 .header{
-  @include flex-apart;
-  // display: flex;
-  // justify-content: space-between;
-  background-color: #FFF;
-  align-items: center;
+  @include flex-center(space-between);
   padding: 1%;
 }
 
@@ -13,8 +9,7 @@
 }
 
 .header__logo, .logo{
-  display:flex;
-  align-items: center;
+  @include flex-center;
 }
 
 .header__logo .logo__asset{
@@ -22,8 +17,7 @@
 }
 
 .header__nav{
-  display: flex;
-  align-items: center;
+  @include flex-center;
 }
 
 .nav{
@@ -31,25 +25,24 @@
 }
 
 .nav__list{
-  display:flex;
-  align-items: center;
+  @include flex-center;
 }
 
 .search, .nav__item{
   margin-left: 70px;
-  font-weight: bold;
+  font-weight: $font-bolder;
 }
 
 .nav__item--highlight{
-  font-weight: bold;
+  font-weight: $font-bolder;
   text-transform: uppercase;
-  color: $highlight;
-  letter-spacing: 0.5px;
+  color: $color-highlight;
+  letter-spacing: $spacing-small;
   padding-right: 30px;
 }
 
 .search{
-  border-bottom:1px solid $highlight;
+  border-bottom:1px solid $color-highlight;
 }
 
 .search__input{
