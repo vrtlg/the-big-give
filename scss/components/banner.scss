@@ -1,0 +1,96 @@
+.banner{
+  background-image: url(images/hero-background.webp);
+  background-size: cover;
+}
+
+.statistics{
+  display: flex;
+  position:relative;
+  top: 20px;
+  justify-content: space-between;
+  color:white;
+  background-color: #333333;
+}
+
+.stats__figure{
+  font-size: 24px;
+  font-weight: bold;
+  padding-right: 5px;
+}
+
+.statistics__item{
+  padding-left: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.stats__item--large{
+  transform:scale(1.5);
+  background-color: #333333;
+  border-radius: 4px;
+  box-shadow: 5px 0px 5px rgba(0,0,0,0.5);
+  padding: 5px 5px 5px 50px;
+}
+
+.banner__wrap{
+  margin: 30px 300px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.banner__titles{
+  padding-right: 100px;
+  margin:50px 50px 50px 100px;
+  color: white;
+}
+
+.banner__title{
+  font-size: 60px;
+  line-height: 70px;
+  font-weight:bold;
+  margin-bottom: 20px;
+}
+
+.banner__subtitle{
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 36px;
+}
+
+.searchbox{
+  padding: 30px 20px;
+  background:white;
+  height: 200px;
+  width: 800px;
+  border-radius: 4px;
+  box-shadow: 0px 11px 15px rgba(0, 0, 0, 0.05), 0px 9px 46px rgba(0, 0, 0, 0.05), 0px 24px 38px rgba(0, 0, 0, 0.05);
+}
+
+.searchbox__title{
+  text-transform: uppercase;
+  font-weight:normal;
+  letter-spacing: 1px;
+}
+
+.searchbox__title, .searchbox__input, .searchbox__button{
+  display: block;
+  width: 100%;
+  margin-bottom:20px;
+}
+
+.searchbox__input{
+  font-size:18px;
+  padding:5px;
+  border:none;
+  border-bottom: 1px solid $highlight;
+  border-radius: 4px;
+}
+
+.searchbox__button{
+  color: white;
+  background: $highlight;
+  padding: 10px 30px;
+  border-radius: 5px;
+  text-align: center;
+}

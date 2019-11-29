@@ -4,16 +4,16 @@
 
 var gulp = require('gulp');
 var sass = require('gulp-sass');
-var browserSync = require('browser-sync').create();
+//var browserSync = require('browser-sync').create();
 
 gulp.task('sass', function() {
-  return gulp.src('scss/**/*.scss') // Gets all files ending with .scss in app/scss and children dirs
+  return gulp.src('./scss/style.scss') // Gets all files ending with .scss in app/scss and children dirs
     .pipe(sass())
     .pipe(gulp.dest('css'))
 })
 
 gulp.task('watch', function(){
-  gulp.watch('scss/**/*.scss',  gulp.series('sass'));
+  gulp.watch('./scss/style.scss',  gulp.series('sass'));
   // Other watchers
 })
 

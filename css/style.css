@@ -11,83 +11,6 @@ html {
   font-size: 18px;
   font-family: "Maven Pro", Arial, sans-serif; }
 
-/* ---------------------- navbar 2.0 ----------------------------------  */
-.header {
-  display: flex;
-  justify-content: space-between;
-  background-color: #FFF;
-  align-items: center;
-  padding: 1%; }
-
-.header__logo {
-  margin-right: 50px;
-  padding: 0px 20px; }
-
-.header__logo, .logo {
-  display: flex;
-  align-items: center; }
-
-.header__logo .logo__asset {
-  height: 28px; }
-
-.header__nav {
-  display: flex;
-  align-items: center; }
-
-.nav {
-  flex-grow: 1; }
-
-.nav__list {
-  display: flex;
-  align-items: center; }
-
-.search, .nav__item {
-  margin-left: 70px;
-  font-weight: bold; }
-
-.nav__item--highlight {
-  font-weight: bold;
-  text-transform: uppercase;
-  color: #00838F;
-  letter-spacing: 0.5px;
-  padding-right: 30px; }
-
-.search {
-  border-bottom: 1px solid #00838F; }
-
-.search__input {
-  border: none;
-  padding-left: 10px; }
-
-/* ---------------------- navbar ----------------------------------  */
-/* .header-nav{
-  background-color: white;
-  padding: 15px;
-  font-weight: bold;
-}
-
-.header-nav_ul{
-  display:flex;
-  justify-content: space-between;
-}
-
-.logo-black{
-  height: 20px;
-}
-
-.header-nav_search{
-  border-top: none;
-  border-left:none;
-  border-right:none;
-  border-bottom: 1px solid $highlight;
-}
-
-.header-nav_login{
-  text-transform: uppercase;
-  color: $highlight;
-} */
-/* --------------------- main ---------------------------- */
-/* ----------------------- banner --------------------------------- */
 .banner {
   background: red;
   /* background-image: url(images/hero-background.webp); */
@@ -172,7 +95,6 @@ html {
   border-radius: 5px;
   text-align: center; }
 
-/* --------------------- cards ---------------------------- */
 .filter__list {
   display: flex;
   justify-content: space-between;
@@ -283,7 +205,6 @@ html {
   font-weight: 500;
   padding: 10px 25px; }
 
-/* --------------------------- footer --------------------*/
 .footer {
   background: #333333;
   color: white;
@@ -328,3 +249,50 @@ html {
 .sponsors__logos .logo__asset {
   height: 50px;
   margin: 10px 130px 0px 0px; }
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #FFF;
+  align-items: center;
+  padding: 1%; }
+
+.header__logo {
+  margin-right: 50px;
+  padding: 0px 20px; }
+
+.header__logo, .logo {
+  display: flex;
+  align-items: center; }
+
+.header__logo .logo__asset {
+  height: 28px; }
+
+.header__nav {
+  display: flex;
+  align-items: center; }
+
+.nav {
+  flex-grow: 1; }
+
+.nav__list {
+  display: flex;
+  align-items: center; }
+
+.search, .nav__item {
+  margin-left: 70px;
+  font-weight: bold; }
+
+.nav__item--highlight {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #00838F;
+  letter-spacing: 0.5px;
+  padding-right: 30px; }
+
+.search {
+  border-bottom: 1px solid #00838F; }
+
+.search__input {
+  border: none;
+  padding-left: 10px; }
