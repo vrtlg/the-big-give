@@ -89,7 +89,8 @@ html {
 /* --------------------- main ---------------------------- */
 /* ----------------------- banner --------------------------------- */
 .banner {
-  background-image: url(images/hero-background.webp);
+  background: red;
+  /* background-image: url(images/hero-background.webp); */
   background-size: cover; }
 
 .statistics {

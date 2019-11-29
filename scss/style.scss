@@ -1,1 +1,445 @@
-@import url("css.scss");
+/* fonts */
+
+/* @font-face {
+    font-family: 'maven_problack';
+    src: url('fonts/mavenpro-black-webfont.woff2') format('woff2'),
+         url('fonts/mavenpro-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'maven_probold';
+    src: url('fonts/mavenpro-bold-webfont.woff2') format('woff2'),
+         url('fonts/mavenpro-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'maven_promedium';
+    src: url('fonts/mavenpro-medium-webfont.woff2') format('woff2'),
+         url('fonts/mavenpro-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'maven_proregular';
+    src: url('fonts/mavenpro-regular-webfont.woff2') format('woff2'),
+         url('fonts/mavenpro-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+} */
+
+/* --------------------------------------------------------- */
+$highlight: #00838F;
+
+@mixin flex-apart{
+  display:flex;
+  justify-content: space-between;
+}
+
+@mixin flex($direction, $wrap, $justify){
+  display: flex;
+  flex-direction: $direction;
+  flex-wrap: $wrap;
+  justify-content: $justify;
+}
+
+.test-flex{
+  @include flex(column, nowrap, center)
+}
+
+html{
+  background:#FAFAFA;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  color:inherit;
+  font-size: 18px;
+  font-family: "Maven Pro", Arial, sans-serif;
+}
+
+/* ---------------------- navbar 2.0 ----------------------------------  */
+
+.header{
+  @include flex-apart;
+  // display: flex;
+  // justify-content: space-between;
+  background-color: #FFF;
+  align-items: center;
+  padding: 1%;
+}
+
+.header__logo {
+  margin-right: 50px;
+  padding: 0px 20px;
+}
+
+.header__logo, .logo{
+  display:flex;
+  align-items: center;
+}
+
+.header__logo .logo__asset{
+  height: 28px;
+}
+
+.header__nav{
+  display: flex;
+  align-items: center;
+}
+
+.nav{
+  flex-grow:1;
+}
+
+.nav__list{
+  display:flex;
+  align-items: center;
+}
+
+.search, .nav__item{
+  margin-left: 70px;
+  font-weight: bold;
+}
+
+.nav__item--highlight{
+  font-weight: bold;
+  text-transform: uppercase;
+  color: $highlight;
+  letter-spacing: 0.5px;
+  padding-right: 30px;
+}
+
+.search{
+  border-bottom:1px solid $highlight;
+}
+
+.search__input{
+  border:none;
+  padding-left:10px;
+}
+
+/* ---------------------- navbar ----------------------------------  */
+
+/* .header-nav{
+  background-color: white;
+  padding: 15px;
+  font-weight: bold;
+}
+
+.header-nav_ul{
+  display:flex;
+  justify-content: space-between;
+}
+
+.logo-black{
+  height: 20px;
+}
+
+.header-nav_search{
+  border-top: none;
+  border-left:none;
+  border-right:none;
+  border-bottom: 1px solid $highlight;
+}
+
+.header-nav_login{
+  text-transform: uppercase;
+  color: $highlight;
+} */
+
+/* --------------------- main ---------------------------- */
+
+/* ----------------------- banner --------------------------------- */
+
+.banner{
+  background: red;
+  // background-image: url(images/hero-background.webp);
+  background-size: cover;
+}
+
+.statistics{
+  display: flex;
+  position:relative;
+  top: 20px;
+  justify-content: space-between;
+  color:white;
+  background-color: #333333;
+}
+
+.stats__figure{
+  font-size: 24px;
+  font-weight: bold;
+  padding-right: 5px;
+}
+
+.statistics__item{
+  padding-left: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.stats__item--large{
+  transform:scale(1.5);
+  background-color: #333333;
+  border-radius: 4px;
+  box-shadow: 5px 0px 5px rgba(0,0,0,0.5);
+  padding: 5px 5px 5px 50px;
+}
+
+.banner__wrap{
+  margin: 30px 300px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.banner__titles{
+  padding-right: 100px;
+  margin:50px 50px 50px 100px;
+  color: white;
+}
+
+.banner__title{
+  font-size: 60px;
+  line-height: 70px;
+  font-weight:bold;
+  margin-bottom: 20px;
+}
+
+.banner__subtitle{
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 36px;
+}
+
+.searchbox{
+  padding: 30px 20px;
+  background:white;
+  height: 200px;
+  width: 800px;
+  border-radius: 4px;
+  box-shadow: 0px 11px 15px rgba(0, 0, 0, 0.05), 0px 9px 46px rgba(0, 0, 0, 0.05), 0px 24px 38px rgba(0, 0, 0, 0.05);
+}
+
+.searchbox__title{
+  text-transform: uppercase;
+  font-weight:normal;
+  letter-spacing: 1px;
+}
+
+.searchbox__title, .searchbox__input, .searchbox__button{
+  display: block;
+  width: 100%;
+  margin-bottom:20px;
+}
+
+.searchbox__input{
+  font-size:18px;
+  padding:5px;
+  border:none;
+  border-bottom: 1px solid $highlight;
+  border-radius: 4px;
+}
+
+.searchbox__button{
+  color: white;
+  background: $highlight;
+  padding: 10px 30px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+/* --------------------- cards ---------------------------- */
+
+.filter__list{
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 50px;
+}
+
+.filter__item{
+  background: white;
+  color: $highlight;
+  border: 1px solid $highlight;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight:500;
+  padding: 10px 68px;
+  margin:5px;
+  width: max-content;
+}
+
+.filter__item:hover{
+  background: #E0F0F2;
+}
+
+.cards{
+  width: 66%;
+  margin: 0 auto;
+  display:flex;
+  flex-flow: row wrap;
+}
+
+.cards__card{
+  width:33%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
+
+.card{
+  width:350px;
+  box-shadow: 0px 11px 15px rgba(0, 0, 0, 0.05), 0px 9px 46px rgba(0, 0, 0, 0.05), 0px 24px 38px rgba(0, 0, 0, 0.05);
+  margin-bottom: 60px;
+  background:white;
+  border-radius: 4px;
+  height:430px;
+}
+
+.card__asset{
+  width:100%;
+  border-radius: 4px 4px 0px 0px;
+}
+
+.card__titles{
+  margin: 10px 25px;
+}
+
+.card__subheading{
+  text-transform: uppercase;
+  font-size:14px;
+  letter-spacing: 1px;
+  padding: 2px;
+  color: #7B8292;
+  font-weight:normal;
+}
+
+.card__heading{
+  color: #00707C;
+  font-weight: bold;
+  font-size: 24px;
+}
+.card__tags{
+  overflow:scroll;
+  margin-left:10px;
+}
+
+.tags{
+  margin: 20px 0px;
+  display:flex;
+  width:max-content;
+}
+
+.tag__item{
+  display: flex;
+  margin: 5px;
+  padding: 1px 5px;
+  align-items: center;
+  text-align: center;
+  font-size: 14px;
+  color: $highlight;
+  background: #E0F0F2;
+  border-radius: 14px;
+}
+
+.fund-stats{
+  display:flex;
+}
+
+.fund-stats__block{
+  margin: 0px 40px 15px 25px;
+}
+
+.fund-stats__title{
+  color:#7B8292;
+  font-size:12px;
+  font-weight: normal;
+}
+
+.fund-stats__figure{
+  color: $highlight;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.card__interactions{
+  margin: 25px;
+}
+.card__more-info{
+  font-size:18px;
+  color:$highlight;
+  margin-right: 80px;
+}
+
+.card__button{
+  background: #68D0B6;
+  border-radius:4px;
+  color:#007B87;
+  font-weight:500;
+  padding:10px 25px;
+}
+
+/* --------------------------- footer --------------------*/
+.footer{
+  background:#333333;
+  color: white;
+  padding: 50px 100px;
+}
+
+.footer__container{
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__primary{
+  display: flex;
+  width:60%;
+  justify-content: space-between;
+}
+
+.footer .logo__asset{
+  height: 40px;
+}
+
+.subnav__heading{
+  margin-bottom:20px;
+}
+
+.subnav__item{
+  margin-bottom:10px;
+}
+
+.subnav__item--highlighted{
+  text-transform: uppercase;
+  color:#68D0B6;
+  font-weight:600;
+  margin-left: 300px;
+  width: max-content;
+  margin-bottom: 25px;
+}
+
+.footer__secondary{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: 50px;
+}
+
+.sponsors{
+  display:flex;
+  flex-direction: column;
+}
+
+.sponsors__logos .logo__asset{
+  height: 50px;
+  margin: 10px 130px 0px 0px;
+}
